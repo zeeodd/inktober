@@ -53,8 +53,8 @@
         <li class="month=prev"></li>
         <li class="month=prev"></li>
         <li class="done">
-          <div id="modalToggle" class="img__wrap">
-            <img id="myImg" src="images/oct-1.png"/>
+          <div id="modalToggle1" class="img__wrap">
+            <img id="myImg1" src="images/oct-1.png"/>
             <p class="img__description">Crystal</p>
           </div>
           <span>1</span>
@@ -99,39 +99,11 @@
 
     </div>
 
-    <!-- The Modal -->
     <div id="myModal" class="modal">
        <img class="modal-content" id="img01">
     </div>
 
-    <script src='scripts/papaparse.min.js'></script>
-    <script>
-    // Get the modal
-    var modal = document.getElementById('myModal');
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var toggle = document.getElementById('modalToggle');
-    var img = document.getElementById('myImg');
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-    toggle.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = img.src;
-        modalImg.alt = img.alt;
-    }
-
-
-    // When the user clicks on <span> (x), close the modal
-    modal.onclick = function() {
-        img01.className += " out";
-        setTimeout(function() {
-           modal.style.display = "none";
-           img01.className = "modal-content";
-         }, 300);
-
-     }
-
-    </script>
+    <script src='scripts/inktober.js'></script>
 
   </body>
 </html>
