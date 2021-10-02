@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "name": "<b>CV</b>",
+      "color": "1",
+      "url": "pdfs/duron_cv.pdf"
+    },
+    {
+      "id": 2,
+      "name": "<b>Teaching </br> Statement</b>",
+      "color": "2",
+      "url": "pdfs/Teaching_Statement.pdf"
+    },
+    {
+      "id": 3,
+      "name": "<b>Research </br> Statement</b>",
+      "color": "3",
+      "url": "pdfs/Research_Statement.pdf"
+    },
+    {
+      "id": 4,
+      "name": "<b>Diversity </br> Statement</b>",
+      "color": "4",
+      "url": "pdfs/Diversity_Statement.pdf"
+    }
+  ],
+  "links": [
+    {
+      "source": 2,
+      "target": 1
+    },
+    {
+      "source": 3,
+      "target": 1
+    },
+    {
+      "source": 4,
+      "target": 1
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Inktober 2021</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="icon" href="images/pumpkin.png">
+    <link rel="apple-touch-icon" href="images/pumpkin.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+  </head>
+
+  <body id="Body">
+
+    <div class="calendar">
+      <header>
+        <h1>Inktober 2021</h1>
+      </header>
+
+      <ul class="weekdays">
+        <li>
+          <abbr title="S">Sunday</abbr>
+        </li>
+        <li>
+          <abbr title="M">Monday</abbr>
+        </li>
+        <li>
+          <abbr title="T">Tuesday</abbr>
+        </li>
+        <li>
+          <abbr title="W">Wednesday</abbr>
+        </li>
+        <li>
+          <abbr title="T">Thursday</abbr>
+        </li>
+        <li>
+          <abbr title="F">Friday</abbr>
+        </li>
+        <li>
+          <abbr title="S">Saturday</abbr>
+        </li>
+      </ul>
+
+      <ol class="day-grid">
+        <li class="month=prev"></li>
+        <li class="month=prev"></li>
+        <li class="month=prev"></li>
+        <li class="month=prev"></li>
+        <li class="month=prev"></li>
+        <li class="done">
+          <div id="modalToggle" class="img__wrap">
+            <img id="myImg" src="images/oct-1.png"/>
+            <p class="img__description">Crystal</p>
+          </div>
+          <span>1</span>
+        </li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+        <li class="month-next"></li>
+        <li class="month-next"></li>
+        <li class="month-next"></li>
+        <li class="month-next"></li>
+        <li class="month-next"></li>
+        <li class="month-next"></li>
+      </ol>
+
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+       <img class="modal-content" id="img01">
+    </div>
+
+    <script src='scripts/papaparse.min.js'></script>
+    <script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var toggle = document.getElementById('modalToggle');
+    var img = document.getElementById('myImg');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    toggle.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
+    }
+
+
+    // When the user clicks on <span> (x), close the modal
+    modal.onclick = function() {
+        img01.className += " out";
+        setTimeout(function() {
+           modal.style.display = "none";
+           img01.className = "modal-content";
+         }, 300);
+
+     }
+
+    </script>
+
+  </body>
+</html>
