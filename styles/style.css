@@ -2,10 +2,11 @@ body {
   font-family: 'Balsamiq Sans', cursive !important;
   background: rgb(25, 25, 25);
   text-transform: uppercase;
+  margin-bottom: 100px;
 }
 
 header {
-  letter-spacing: -5px; 
+  letter-spacing: -5px;
   display: flex;
   align-items: center;
   font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
