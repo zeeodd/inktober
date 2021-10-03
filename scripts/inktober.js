@@ -23,9 +23,9 @@ toggle.onclick = function(){
 /*
 *   OCTOBER 2
 */
-var toggle = document.getElementById('modalToggle2');
-var img = document.getElementById('myImg2');
-toggle.onclick = function(){
+var toggle2 = document.getElementById('modalToggle2');
+var img2 = document.getElementById('myImg2');
+toggle2.onclick = function(){
     modal.style.display = "block";
-    modalImg.src = img.src;
+    modalImg.src = img2.src;
 }
