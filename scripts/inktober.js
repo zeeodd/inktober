@@ -29,3 +29,13 @@ toggle2.onclick = function(){
     modal.style.display = "block";
     modalImg.src = img2.src;
 }
+
+/*
+*   OCTOBER 3
+*/
+var toggle3 = document.getElementById('modalToggle3');
+var img3 = document.getElementById('myImg3');
+toggle3.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = img3.src;
+}
