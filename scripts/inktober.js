@@ -49,3 +49,13 @@ toggle4.onclick = function(){
     modal.style.display = "block";
     modalImg.src = img4.src;
 }
+
+/*
+*   OCTOBER 5
+*/
+var toggle5 = document.getElementById('modalToggle5');
+var img5 = document.getElementById('myImg5');
+toggle5.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = img5.src;
+}
