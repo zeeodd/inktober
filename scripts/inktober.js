@@ -59,3 +59,23 @@ toggle5.onclick = function(){
     modal.style.display = "block";
     modalImg.src = img5.src;
 }
+
+/*
+*   OCTOBER 6
+*/
+var toggle6 = document.getElementById('modalToggle6');
+var img6 = document.getElementById('myImg6');
+toggle6.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = img6.src;
+}
+
+/*
+*   OCTOBER 7
+*/
+var toggle7 = document.getElementById('modalToggle7');
+var img7 = document.getElementById('myImg7');
+toggle7.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = img7.src;
+}
